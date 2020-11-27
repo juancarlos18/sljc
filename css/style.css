@@ -4,7 +4,7 @@ body {
 	height: 100%;
 	margin:	20;
 	padding: 20;
-	/*background-color: rgb(53, 46, 73) !important;*/
+	background-color: black !important;
 }
 
 header {
@@ -14,7 +14,7 @@ header {
 	padding: 10px;
 	box-sizing: border-box;
 	border-radius: 15px;
-	background-color: rgb(55, 62, 66);
+	background-color: rgb(55, 66, 64);
 	font-family: 'Poppins', sans-serif;
 	font-weight: 700;
 	font-size: 18px;
@@ -72,7 +72,7 @@ nav ul li a.active {
 	padding: 10px 20px;
 	text-decoration: none;
 	color: white;
-	background-image: linear-gradient(to left, rgb(4, 98, 153), rgb(16, 168, 206), rgb(4, 98, 153));
+	background-image: linear-gradient(to left, rgb(4, 98, 153), rgb(0, 159, 199), rgb(4, 98, 153));
 	transition: .5s;
 }
 
@@ -85,7 +85,7 @@ nav ul li a:hover {
 	padding: 10px 20px;
 	text-decoration: none;
 	color: white;
-	background-image: linear-gradient(to left, rgb(4, 153, 153), rgb(16, 206, 159), rgb(4, 153, 153));
+	background-image: linear-gradient(to left, rgb(4, 153, 108), rgb(16, 206, 79), rgb(4, 153, 108));
 	transition: .5s;
 	background-position: right;
 }
@@ -153,6 +153,7 @@ nav ul li a:hover {
 	background-image: url("../image/Portada3.jpg");
 	background-size: cover;
 	background-attachment: fixed;
+	background-position: center;
 	position: absolute;
 	margin-top: -20px;
 }
@@ -166,10 +167,54 @@ nav ul li a:hover {
 
 
 
-.intro {
-	background: linear-gradient(rgb(87, 0, 226), rgba(87, 0, 226, 0));
+.presentation {
+	background-color: white;
+	color: black !important;
 }
 
+.presentation h1 {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+	font-size: 40px;
+}
+
+.presentation h3 {
+	font-weight: 500;
+	font-size: 20px;
+	margin: 0 0 90px 0;
+	font-family: 'Poppins', sans-serif;
+}
+.presentation a {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	font-size: 20px;
+	padding: 15px 20px;
+	border-radius: 15px;
+	transition: .5s;
+	background-size: 200%;
+}
+
+.presentation a.a {
+	/*background-color: rgb(0, 86, 199);*/
+	background-image: linear-gradient(to left, rgb(4, 153, 108), rgb(16, 206, 79), rgb(4, 153, 108));
+	color: white;
+	margin-right: 10px;
+}
+
+.presentation a.b {
+	color: rgb(8, 129, 109);
+	margin-left: 10px;
+	background-color: rgb(194, 250, 236);
+}
+
+.presentation a.a:hover {
+	background-position: right;
+}
+
+.presentation a.a:hover,
+.presentation a.b:hover {
+	text-decoration: none;
+}
 
 
 
@@ -178,13 +223,35 @@ nav ul li a:hover {
 	position: relative;
 }
 
-.content-web h2 {
+.presentation, .services, .projects, .developers {
+	margin-bottom: 60px;
+}
+
+.presentation h2,
+.services h2,
+.projects h2,
+.developers h2 {
 	font-weight: 700;
 	font-size: 30px;
-	/*color: white;*/
-	margin-bottom: 40px;
+	margin: 60px 0 40px 0;
 	font-family: 'Poppins', sans-serif;
 }
+
+.services h2,
+.projects h2,
+.developers h2 {
+	color: white;
+}
+
+.services h3,
+.projects h3,
+.developers h3 {
+	font-weight: 400;
+	font-size: 18px;
+	margin: 0 0 90px 0;
+	font-family: 'Poppins', sans-serif;
+}
+
 
 .contorno {
 	margin: 0 0 30px 0;
@@ -321,9 +388,215 @@ nav ul li a:hover {
 
 
 
+
+
+
 .projects {
-	background: linear-gradient(white, rgb(0, 255, 191));
+	background: linear-gradient(rgba(0, 0, 0, 0.541), rgba(0, 0, 0, 0.637)), url(../image/Portada-JC.png);
+	background-size: cover;
+	background-position: bottom;
+	color: white;
+	font-family: 'Poppins', sans-serif;
 }
+
+.projects .p-box {
+	background-color: rgba(0, 0, 0, 0);
+	border-radius: 15px;
+	padding: 25px;
+	border-style: solid;
+	border-width: 3px;
+	border-color:white;
+	box-shadow: 0 2px 10px rgba(255, 255, 255, 0.363);
+	height: 250px;
+	position: relative;
+	transition: .3s;
+	color: white;
+}
+
+.projects .p-box h3, .projects .p-box h4 {
+	position: absolute;
+}
+
+.projects .p-box h3 {
+	font-size: 20px;
+	font-weight: 600;
+	top: 20px;
+}
+
+.projects .p-box h4 {
+	font-size: 15px;
+	font-weight: 500;
+	margin-top: 37px;
+}
+
+.projects .p-box p {
+	margin-top: 80px;
+	font-weight: 400;
+	font-size: 14px;
+	display: none;
+	color: black;
+}
+
+.projects .p-box a {
+	bottom: 0;
+	position: absolute;
+	left: 25px;
+	top: 200px;
+	font-weight: 500;
+	font-size: 15px;
+	display: none;
+	transition: .3s;
+	color: rgb(8, 129, 109);
+}
+
+.projects .p-box:hover {
+	background-color: white;
+	color: black;
+}
+
+.projects .p-box:hover p,
+.projects .p-box:hover a {
+	display: inline-block;
+}
+
+
+.projects .p-box a:hover {
+	text-decoration: none;
+	letter-spacing: 1px;
+}
+
+.projects .p-box a span {
+	display: none;
+	text-align: inherit;
+	margin-left: 5px;
+}
+
+.projects .p-box a:hover span {
+	color: rgb(2, 156, 131);
+	display: inline;
+}
+
+
+
+
+
+
+.middle {
+	position: relative;
+}
+
+.card {
+	cursor: pointer;
+	height: 480px;
+	margin-bottom: 25px;
+}
+
+.front,
+.back {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	backface-visibility: hidden;
+	position: absolute;
+	transition: all .6s linear;
+	border-radius: 15px;
+	box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.front span{
+	color: white;
+	font-weight: 400;
+	font-size: 30px;
+	top: 5%;
+	left: 48%;
+	position: absolute;
+}
+
+.front img{
+	height: 100%;
+	background-size: cover;
+}
+
+.front{
+	transform: perspective(600px) rotateY(0deg);
+}
+
+.back{
+	background-color: white;
+	transform: perspective(600px) rotateY(180deg);
+}
+
+.back-content{
+	margin-top: 20%;
+	text-align: center;
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+
+.back-content h2{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	letter-spacing: 1px;
+	font-size: 26px;
+	color: rgb(209, 209, 209);
+}
+
+.back-content h4{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+	color: rgb(131, 151, 151);
+}
+
+.back-content span{
+	font-weight: 400;
+	font-size: 60px;
+	color: white;
+}
+
+.back-content p{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	font-size: 17px;
+	color: rgb(206, 206, 206);
+}
+
+.card:hover > .front{
+	transform: perspective(600px) rotateY(-180deg);
+}
+
+.card:hover > .back{
+	transform: perspective(600px) rotateY(0deg);
+}
+
+.button-i a {
+	font-family: 'Poppins', sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	color: rgb(221, 115, 115);
+	transition: all .6s ease;
+}
+
+.button-i:hover a {
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+	letter-spacing: 2px;
+	font-weight: 400;
+}
+
+/* Redes Sociales */
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1208,119 +1481,6 @@ nav ul li a:hover {
 
 
 
-
-
-
-
-/* Redes Sociales */
-
-.middle {
-	position: relative;
-}
-
-.card {
-	cursor: pointer;
-	height: 480px;
-	margin-bottom: 25px;
-}
-
-.front,
-.back {
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
-	backface-visibility: hidden;
-	position: absolute;
-	transition: all .6s linear;
-	/*border-radius: 20px;*/
-	box-shadow: 0 0 10px rgba(0,0,0,0.2);
-}
-
-.front span{
-	color: white;
-	font-weight: 400;
-	font-size: 30px;
-	top: 5%;
-	left: 48%;
-	position: absolute;
-}
-
-.front img{
-	height: 100%;
-	background-size: cover;
-}
-
-.front{
-	transform: perspective(600px) rotateY(0deg);
-}
-
-.back{
-	background: rgb(43, 43, 43);
-	transform: perspective(600px) rotateY(180deg);
-}
-
-.back-content{
-	margin-top: 20%;
-	text-align: center;
-	margin-left: 40px;
-	margin-right: 40px;
-}
-
-
-.back-content h2{
-	font-family: 'Poppins', sans-serif;
-	font-weight: 400;
-	letter-spacing: 1px;
-	font-size: 26px;
-	color: rgb(209, 209, 209);
-}
-
-.back-content h4{
-	font-family: 'Poppins', sans-serif;
-	font-weight: 500;
-	font-size: 18px;
-	color: rgb(131, 151, 151);
-}
-
-.back-content span{
-	font-weight: 400;
-	font-size: 60px;
-	color: white;
-}
-
-.back-content p{
-	font-family: 'Poppins', sans-serif;
-	font-weight: 400;
-	font-size: 17px;
-	color: rgb(206, 206, 206);
-}
-
-.card:hover > .front{
-	transform: perspective(600px) rotateY(-180deg);
-}
-
-.card:hover > .back{
-	transform: perspective(600px) rotateY(0deg);
-}
-
-.button-i a {
-	font-family: 'Poppins', sans-serif;
-	font-size: 18px;
-	font-weight: 500;
-	color: rgb(221, 115, 115);
-	transition: all .6s ease;
-}
-
-.button-i:hover a {
-	text-decoration: none;
-	color: rgb(255, 255, 255);
-	letter-spacing: 2px;
-	font-weight: 400;
-}
-
-/* Redes Sociales */
-
-	
 
 
 
