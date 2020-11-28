@@ -152,6 +152,9 @@ nav ul li a:hover {
 	height: 720px;
 	background-image: url("../image/Portada3.jpg");
 	background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
 	position: absolute;
