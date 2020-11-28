@@ -510,6 +510,7 @@ nav ul li a:hover {
 .developers {
 	height: 600px;
 	display: flex;
+	display:-webkit-flex;
 }
 
 .developers span {
