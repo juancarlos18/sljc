@@ -563,7 +563,7 @@ nav ul li a:hover {
 	width: 100%;
 	font-family: 'Poppins', sans-serif;
 	opacity: 0;
-	transition: .2s;
+	transition: .6s;
 }
 
 .person:hover .person-info {
